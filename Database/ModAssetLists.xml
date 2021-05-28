@@ -1,0 +1,70 @@
+<Database>
+    
+
+<!-- 
+### Skills ### 
+This section adds my custom logo to the department specific skills. -->
+
+<GameDBAsset ID="ASSET_MOD_ICON_MUTA">   
+	<Type>TEXTURE_CUSTOM_SPRITE</Type>               
+	<File>MOD_ROOT/muta_skill_icon_muta.png</File> 
+</GameDBAsset>
+
+<GameDBAsset ID="ASSET_MOD_ICON_MUTA_DARK">   
+	<Type>TEXTURE_CUSTOM_SPRITE</Type>               
+	<File>MOD_ROOT/muta_skill_icon_muta.png</File> 
+</GameDBAsset>
+    
+<!-- 
+### Department ### 
+This section handles adding my custom department logos to the game. -->
+
+<GameDBAsset ID="ASSET_MUTA_DPT_ICON_0">   
+	<Type>TEXTURE_CUSTOM_SPRITE</Type>               
+	<File>MOD_ROOT/muta_dept_icon_0.png</File> 
+</GameDBAsset>
+
+<GameDBAsset ID="ASSET_MUTA_DPT_ICON_1">   
+	<Type>TEXTURE_CUSTOM_SPRITE</Type>               
+	<File>MOD_ROOT/muta_dept_icon_1.png</File> 
+</GameDBAsset>
+
+<GameDBAsset ID="ASSET_MUTA_DPT_ICON_2">   
+	<Type>TEXTURE_CUSTOM_SPRITE</Type>               
+	<File>MOD_ROOT/muta_dept_icon_2.png</File> 
+</GameDBAsset>
+
+<GameDBAsset ID="ASSET_MUTA_DPT_ICON_3">   
+	<Type>TEXTURE_CUSTOM_SPRITE</Type>               
+	<File>MOD_ROOT/muta_dept_icon_3.png</File> 
+</GameDBAsset>
+
+<GameDBAsset ID="ASSET_MUTA_DPT_ICON_4">   
+	<Type>TEXTURE_CUSTOM_SPRITE</Type>               
+	<File>MOD_ROOT/muta_dept_icon_4.png</File> 
+</GameDBAsset>
+
+<GameDBAsset ID="ASSET_MUTA_DPT_ICON_5">   
+	<Type>TEXTURE_CUSTOM_SPRITE</Type>               
+	<File>MOD_ROOT/muta_dept_icon_5.png</File> 
+</GameDBAsset>
+
+<GameDBAsset ID="ASSET_MUTA_DPT_ICON_6">   
+	<Type>TEXTURE_CUSTOM_SPRITE</Type>               
+	<File>MOD_ROOT/muta_dept_icon_6.png</File> 
+</GameDBAsset>
+
+<GameDBAsset ID="ASSET_MUTA_DECAL_1">   
+	<Type>TEXTURE_CUSTOM_SPRITE</Type>               
+	<File>MOD_ROOT/muta_decal_icon_0.png</File> 
+</GameDBAsset>
+
+<GameDBAsset ID="ASSET_OBJ_ICON_0">   	<Type>TEXTURE_CUSTOM_SPRITE</Type>      <File>MOD_ROOT/muta_obj_icon_0.png</File> </GameDBAsset>
+<GameDBAsset ID="ASSET_OBJ_ICON_1">   	<Type>TEXTURE_CUSTOM_SPRITE</Type>      <File>MOD_ROOT/muta_obj_icon_1.png</File> </GameDBAsset>
+<GameDBAsset ID="ASSET_OBJ_ICON_2">   	<Type>TEXTURE_CUSTOM_SPRITE</Type>      <File>MOD_ROOT/muta_obj_icon_2.png</File> </GameDBAsset>
+
+<GameDBAsset ID="ASSET_MUTA_SMALL_OBJECTS">           <Type>TEXTURE_OBJECTS</Type>       <File>MOD_ROOT/muta_objects_small.png</File> </GameDBAsset>
+<GameDBAsset ID="ASSET_MUTA_TALL_OBJECTS">           <Type>TEXTURE_OBJECTS</Type>       <File>MOD_ROOT/muta_objects_tall.png</File> </GameDBAsset>
+
+
+</Database>

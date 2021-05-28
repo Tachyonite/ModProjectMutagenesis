@@ -1,0 +1,19 @@
+<Database>
+	<GameDBStringTable ID="ADDON_MOD_PROJECT_MUTAGENESIS">
+	<LanguageCode>en</LanguageCode>
+	<LanguageNameLocalized>English</LanguageNameLocalized>
+	<Contributors>
+	<Name>Yap, Iron Wolf</Name>
+	</Contributors>
+
+	<LocalizedStrings>
+		
+	<GameDBLocalizedString>      
+	<LocID>ADDON_MOD_PROJECT_MUTAGENESIS</LocID>                       	
+	<Text>Project Mutagenesis</Text>  
+	</GameDBLocalizedString>
+
+	</LocalizedStrings>
+	</GameDBStringTable>
+</Database>
+

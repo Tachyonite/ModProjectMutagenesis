@@ -1,0 +1,84 @@
+<Database>
+
+<GameDBStringTable ID="LOC_EN_ADDON_MUTA_BUILDING_MODE">
+<LanguageCode>en</LanguageCode>
+<LanguageNameLocalized>English</LanguageNameLocalized>
+<Contributors>
+<Name>Yap, Iron Wolf</Name>
+</Contributors>
+
+<LocalizedStrings>
+	<GameDBLocalizedString>      
+		<LocID>ROOM_TYPE_MUTA_OFFICE</LocID>                          	
+		<Text>Enrichment office</Text>   
+	</GameDBLocalizedString>
+	<GameDBLocalizedString>
+		<LocID>ROOM_TYPE_MUTA_OFFICE_DESCRIPTION</LocID>              	
+		<Text>An office for the examination and controlled application of various mutagens. Staff requirements:\n1x Doctor</Text>  
+	</GameDBLocalizedString>
+
+	<GameDBLocalizedString>
+		<LocID>ROOM_TYPE_INPATIENT_MUTA_OFFICE</LocID>                               
+		<Text>Mutahazard unit</Text>   
+	</GameDBLocalizedString>
+            
+	<GameDBLocalizedString>      
+		<LocID>ROOM_TYPE_INPATIENT_MUTA_OFFICE_DESCRIPTION</LocID>                   
+		<Text>Mutahazard unit diagnoses and determines the base sequences of a mutagenic disease. \n\nMin. Staff requirements: \n1x Doctor \n(Personnel based in On-call room)</Text>
+	</GameDBLocalizedString>
+
+	<GameDBLocalizedString>
+		<LocID>ROOM_TYPE_MUTAGEN_LAB</LocID>                               
+		<Text>Mutagen lab</Text>   
+	</GameDBLocalizedString>
+            
+	<GameDBLocalizedString>      
+		<LocID>ROOM_TYPE_MUTAGEN_LAB_DESCRIPTION</LocID>                   
+		<Text>A specialised facility dealing with mutagenic substances. \n\nMin. Staff requirements: \n1x Technologist</Text>
+	</GameDBLocalizedString>
+	
+	<!-- ### ### -->
+	<!-- ######################################## Objects below ######################################## -->
+	<!-- ### ### -->
+	
+	<GameDBLocalizedString>      
+		<LocID>OBJECT_DNA_COMBINATOR</LocID>                   
+		<Text>DNA combinator</Text>
+	</GameDBLocalizedString>
+	<GameDBLocalizedString>      
+		<LocID>OBJECT_DNA_COMBINATOR_DESCRIPTION</LocID>                   
+		<Text>DNA/RNA doping treatments merge samples of DNA together, ready to be administered to a patient.</Text>
+	</GameDBLocalizedString>
+
+	<GameDBLocalizedString>      
+		<LocID>OBJECT_MUTA_LAB_FRIDGE</LocID>                   
+		<Text>Serum sample fridge</Text>
+	</GameDBLocalizedString>
+	<GameDBLocalizedString>      
+		<LocID>OBJECT_MUTA_LAB_FRIDGE_DESCRIPTION</LocID>                   
+		<Text>Stores mutagenic serum samples in a sealed, cold environment.</Text>
+	</GameDBLocalizedString>
+
+	<GameDBLocalizedString>      
+		<LocID>OBJECT_MUTA_HOOD</LocID>                   
+		<Text>Serum prep hood</Text>
+	</GameDBLocalizedString>
+	<GameDBLocalizedString>      
+		<LocID>OBJECT_MUTA_HOOD_DESCRIPTION</LocID>                   
+		<Text>Allows scientists to handle samples freely inside a sterile case.</Text>
+	</GameDBLocalizedString>
+	
+	<GameDBLocalizedString>      
+		<LocID>OBJECT_DECAL_MUTAGEN_HAZARD</LocID>                   
+		<Text>Mutagenic hazard</Text>
+	</GameDBLocalizedString>
+	<GameDBLocalizedString>      
+		<LocID>OBJECT_DECAL_MUTAGEN_HAZARD_DESCRIPTION</LocID>                   
+		<Text>A decal.</Text>
+	</GameDBLocalizedString>
+
+	
+
+</LocalizedStrings>
+</GameDBStringTable>
+</Database>

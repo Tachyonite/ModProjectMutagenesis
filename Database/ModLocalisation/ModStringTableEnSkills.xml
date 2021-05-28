@@ -1,0 +1,35 @@
+<Database>
+	<GameDBStringTable ID="LOC_EN_ADDON_MUTAGENICS_SKILLS">
+	
+	<LanguageCode>en</LanguageCode>
+	<LanguageNameLocalized>English</LanguageNameLocalized>
+	<Contributors>
+    <Name>Yap, Iron Wolf</Name>
+	</Contributors>
+        
+	<LocalizedStrings>
+            
+<!-- ### Skills ### -->
+			
+	<GameDBLocalizedString>      
+		<LocID>DPT_MUTAGENICS</LocID>                                          	
+		<Text>Mutagenics</Text>  
+	</GameDBLocalizedString>
+	
+	<GameDBLocalizedString>      
+		<LocID>SKILL_DOC_SPEC_MUTA</LocID>                   
+		<Text>Mutagen Specialist (Consultant)</Text>  
+	</GameDBLocalizedString>
+	
+	<GameDBLocalizedString>      
+		<LocID>SKILL_DOC_SPEC_MUTA_DESCR</LocID>                   
+		<Text>Mutagen specialists are qualified to work with genetically hazardous materials and apply serums in the correct dosages and to the correct areas, in order to create desirable outcomes for patients.</Text>  
+	</GameDBLocalizedString>
+
+	<!-- ### ### -->
+	<!-- ######################################## Vx.x.x.x Below ######################################## -->
+	<!-- ### ### -->
+	
+	</LocalizedStrings>	
+	</GameDBStringTable>
+</Database>

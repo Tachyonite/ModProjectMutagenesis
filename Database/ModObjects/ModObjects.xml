@@ -1,0 +1,175 @@
+<Database>
+
+	
+    <GameDBObject ID="OBJECT_MUTA_HOOD">
+        <AbbreviationLocID>OBJECT_MUTA_HOOD_DESCRIPTION</AbbreviationLocID>
+        <TextureRef>ASSET_MUTA_TALL_OBJECTS</TextureRef>
+        <TextureAtlasLayout>LAYOUT_16_X_32</TextureAtlasLayout>
+        <SpriteShape>SHAPE_1_X_2</SpriteShape>
+        <TextureIDNW>8</TextureIDNW>
+        <TextureIDNE>10</TextureIDNE>
+        <TextureIDSE>12</TextureIDSE>
+        <TextureIDSW>14</TextureIDSW>
+        <IconIndex>672</IconIndex>
+
+        <AccessPositions>
+            <AccessPosition>
+                <m_x>-1</m_x>
+                <m_y>0</m_y>
+            </AccessPosition>
+        </AccessPositions>
+        <PlacedToEdge>false</PlacedToEdge>
+        <AttachedToWall>true</AttachedToWall>
+        <AllowsObjectsOnWallsAbove>false</AllowsObjectsOnWallsAbove>
+        <Placement>INDOORS</Placement>
+        
+        <UseOffsetXNW>-0.7</UseOffsetXNW>
+        <UseOffsetYNW>0.0</UseOffsetYNW>
+
+        <UseAnimations>
+            <Animation>use_equipment_low</Animation>
+        </UseAnimations>
+
+        <RequiresMaintenance>false</RequiresMaintenance>
+        <Durability>20</Durability>
+
+        <Tags>
+            <Tag>ui_equipment</Tag>
+            <Tag>ui_muta_hood</Tag>
+            <Tag>muta_hood</Tag>
+            <Tag>staff_use_close_left</Tag>
+        </Tags>
+
+		<CustomIconAssetRef>ASSET_OBJ_ICON_2</CustomIconAssetRef>
+
+        <AnimationOnlyForceFrame>true</AnimationOnlyForceFrame>
+        <AnimationFramesNW>2</AnimationFramesNW>
+        <AnimationFramesNE>2</AnimationFramesNE>
+        <AnimationFramesSE>2</AnimationFramesSE>
+        <AnimationFramesSW>2</AnimationFramesSW>
+
+        <SoundEventUseStartRef>SFX_ENV_MACHINE_GENERIC_SETUP_03</SoundEventUseStartRef>
+
+        <Cost>2899</Cost>
+		
+		<LightLevelGreen>100</LightLevelGreen>
+		<LightRange>3</LightRange>
+		
+    </GameDBObject>
+	
+	
+
+	
+    <GameDBObject ID="OBJECT_MUTA_LAB_FRIDGE">
+        <AbbreviationLocID>OBJECT_MUTA_LAB_FRIDGE_DESCRIPTION</AbbreviationLocID>
+        <TextureRef>ASSET_MUTA_TALL_OBJECTS</TextureRef>
+        <TextureAtlasLayout>LAYOUT_16_X_32</TextureAtlasLayout>
+        <SpriteShape>SHAPE_1_X_2</SpriteShape>
+        <TextureIDNW>0</TextureIDNW>
+        <TextureIDNE>2</TextureIDNE>
+        <TextureIDSE>4</TextureIDSE>
+        <TextureIDSW>6</TextureIDSW>
+        <IconIndex>768</IconIndex>
+
+        <AccessPositions>
+            <AccessPosition>
+                <m_x>-1</m_x>
+                <m_y>0</m_y>
+            </AccessPosition>
+        </AccessPositions>
+        <PlacedToEdge>false</PlacedToEdge>
+        <AttachedToWall>false</AttachedToWall>
+        <CallbackMessageName>CABINET_USED</CallbackMessageName>
+        
+        <UseOffsetXNW>-0.5</UseOffsetXNW>
+        <UseOffsetYNW>0.0</UseOffsetYNW>
+        
+        <UseAnimations>
+            <Animation>take_cabinet_up</Animation>
+        </UseAnimations>
+
+        <AnimationFramesNW>2</AnimationFramesNW>
+        <AnimationFramesNE>2</AnimationFramesNE>
+        <AnimationFramesSE>2</AnimationFramesSE>
+        <AnimationFramesSW>2</AnimationFramesSW>
+        
+		<CustomIconAssetRef>ASSET_OBJ_ICON_1</CustomIconAssetRef>
+		
+        <Tags>
+        	<Tag>mutagen_fridge</Tag>
+            <Tag>ui_equipment</Tag>
+            <Tag>ui_mutagen_fridge</Tag>
+        </Tags>
+		
+		<LightLevelGreen>100</LightLevelGreen>
+		<LightRange>3</LightRange>
+
+        <AnimationFramesNW>2</AnimationFramesNW>
+        <AnimationFramesNE>2</AnimationFramesNE>
+        <AnimationFramesSE>2</AnimationFramesSE>
+        <AnimationFramesSW>2</AnimationFramesSW>
+		
+        <SoundEventUseStartRef>SFX_ENV_DOOR_FRIDGE_OPEN</SoundEventUseStartRef>
+
+        <RequiresMaintenance>false</RequiresMaintenance>
+        <Durability>20</Durability>
+        <Cost>2399</Cost>
+        <ColorSetRef>COLOR_SET_BUILDING_OBJECT_EQUIPMENT_CABINETS</ColorSetRef>
+    </GameDBObject>
+
+
+    <GameDBObject ID="OBJECT_DNA_COMBINATOR">
+        <AbbreviationLocID>OBJECT_DNA_COMBINATOR_DESCRIPTION</AbbreviationLocID>
+        <TextureRef>ASSET_MUTA_SMALL_OBJECTS</TextureRef>
+        <TextureAtlasLayout>LAYOUT_16_X_64</TextureAtlasLayout>
+        <SpriteShape>SHAPE_1_X_1</SpriteShape>
+        <TextureIDNW>0</TextureIDNW>
+        <TextureIDNE>2</TextureIDNE>
+        <TextureIDSE>4</TextureIDSE>
+        <TextureIDSW>6</TextureIDSW>
+        <IconIndex>963</IconIndex>
+        <PlacedToEdge>false</PlacedToEdge>
+        <AttachedToWall>false</AttachedToWall>
+        <AttachedToObject>true</AttachedToObject>
+        <AllowsObjectsOnWallsAbove>true</AllowsObjectsOnWallsAbove>
+		
+		<LightLevelGreen>100</LightLevelGreen>
+		<LightRange>3</LightRange>
+		
+        <AccessPositions>
+            <AccessPosition>
+                <m_x>-1</m_x>
+                <m_y>0</m_y>
+            </AccessPosition>
+        </AccessPositions>
+        <!-- TODO actual different anims -->
+        <UseAnimationsStart>
+            <Animation>use_equipment_low</Animation>
+        </UseAnimationsStart>
+        <UseAnimations>
+            <Animation>use_equipment_low</Animation>
+        </UseAnimations>
+        <UseAnimationsEnd>
+            <Animation>use_equipment_low</Animation>
+        </UseAnimationsEnd>
+        
+        <Tags>
+            <Tag>dna_combinator</Tag>
+            <Tag>ui_dna_combinator</Tag>
+            <Tag>lab_eq_small</Tag>
+        </Tags>
+
+        <SoundEventUseStartRef>SFX_ENV_MACHINE_GENERIC_SETUP_01</SoundEventUseStartRef>
+
+        <Durability>20</Durability>
+        <Cost>3999</Cost>
+		<CustomIconAssetRef>ASSET_OBJ_ICON_0</CustomIconAssetRef>
+		<AnimationOnlyForceFrame>true</AnimationOnlyForceFrame>
+        <AnimationFramesNW>2</AnimationFramesNW>
+        <AnimationFramesNE>2</AnimationFramesNE>
+        <AnimationFramesSE>2</AnimationFramesSE>
+        <AnimationFramesSW>2</AnimationFramesSW>
+		
+    </GameDBObject>
+
+</Database>

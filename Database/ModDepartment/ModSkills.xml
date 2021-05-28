@@ -1,0 +1,14 @@
+<Database>
+    <!-- Doctor's SPECIALIZATIONS -->
+    <GameDBSkill ID="SKILL_DOC_SPEC_MUTA">
+        <AbbreviationLocID>SKILL_DOC_SPEC_MUTA_DESCR</AbbreviationLocID>
+        <ParentSkill>SKILL_DOC_QUALIF_GENERAL_MEDICINE</ParentSkill>
+        <IconIndex>473</IconIndex>
+		
+		<CustomIconAssetRef>ASSET_MOD_ICON_MUTA</CustomIconAssetRef>
+		<CustomIconLightBackgroundAssetRef>ASSET_MOD_ICON_MUTA_DARK</CustomIconLightBackgroundAssetRef>
+		
+        <ExtraLevelingPercent>100</ExtraLevelingPercent>
+    </GameDBSkill>
+
+</Database>
