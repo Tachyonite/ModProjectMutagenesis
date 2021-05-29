@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.w3schools.com" xmlns="https://www.w3schools.com" elementFormDefault="qualified">
+
+    <xs:simpleType name="DressLevel">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="FULL" />
+            <xs:enumeration value="HALF" />
+            <xs:enumeration value="HALF_TOP" />
+            <xs:enumeration value="NONE" />
+            <xs:enumeration value="UNDERWEAR" />
+            <xs:enumeration value="UNDERWEAR_CLOSED_EYES" />
+            <xs:enumeration value="UNDERWEAR_CLOSED_EYES" />
+            <xs:enumeration value="UNDERWEAR_CLOSED_EYES_AUTOPSY" />
+            <xs:enumeration value="FOREARM_BANDAGE" />
+            <xs:enumeration value="LEG_BANDAGE" />
+            <xs:enumeration value="HEAD_BANDAGE" />
+            <xs:enumeration value="CHEST_BANDAGE" />
+            <xs:enumeration value="ABDOMEN_BANDAGE" />
+            <xs:enumeration value="DOCTOR_NO_STETHOSCOPE" />
+            <xs:enumeration value="OXYGEN_MASK" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="HospitalizationLevel">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NONE" />
+            <xs:enumeration value="TRAUMA" />
+            <xs:enumeration value="OBSERVATION" />
+            <xs:enumeration value="NORMAL" />
+            <xs:enumeration value="HIGH_PRIORITY" />
+            <xs:enumeration value="ICU" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="StaffSelectionRules">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="REQUIRED_ROOM" />
+            <xs:enumeration value="REQUIRED_ROOM_RANDOM" />
+            <xs:enumeration value="DEFAULT_ROOMS" />
+            <xs:enumeration value="REQUIRED_ROOM_IGNORE_DOCTOR" />
+            <xs:enumeration value="REQUIRED_ROOM_OR_DEFAULT_ROOM" />
+            <xs:enumeration value="IGNORE" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ProcedureAnimationState">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="SITTING" />
+            <xs:enumeration value="LYING" />
+            <xs:enumeration value="STANDING" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="SymptomHazard">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Unknown" />
+            <xs:enumeration value="None" />
+            <xs:enumeration value="Low" />
+            <xs:enumeration value="Medium" />
+            <xs:enumeration value="High" />
+            <xs:enumeration value="Positive" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
