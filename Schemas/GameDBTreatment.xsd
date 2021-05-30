@@ -4,7 +4,15 @@
     <xs:element name="Database">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="GameDBTreatment" type="GameDBTreatment" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element name="GameDBTreatment" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:complexContent>
+                            <xs:extension base="GameDBTreatment">
+                                <xs:attribute name="ID" type="xs:string" use="required" />
+                            </xs:extension>
+                        </xs:complexContent>
+                    </xs:complexType>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -12,24 +20,50 @@
     <xs:complexType name="GameDBTreatment">
         <xs:all>
             <xs:element name="AbbreviationLocID" type="xs:string" minOccurs="1" />
-            <xs:element name="DiscomfortLevel" type="SymptomHazard" />
-            <xs:element name="TreatmentType" type="TreatmentType" />
-            <xs:element name="ReceiptType" type="ReceiptType" />
-            <xs:element name="Procedure" type="GameDBProcedure" />
-            <xs:element name="DurationHours" type="xs:float" />
-            <xs:element name="HospitalizationTreatmentRef" type="xs:string" />
-            <xs:element name="AllowedWithAnyHospitalization" type="xs:boolean" />
-            <xs:element name="IconIndex" type="xs:positiveInteger" />
+            <xs:element name="DiscomfortLevel" type="SymptomHazard" minOccurs="0" />
+            <xs:element name="TreatmentType" type="TreatmentType" minOccurs="0" />
+            <xs:element name="ReceiptType" type="ReceiptType" minOccurs="0" />
+            <xs:element name="Procedure" type="GameDBProcedure" minOccurs="0" />
+            <xs:element name="DurationHours" type="xs:float" minOccurs="0" />
+            <xs:element name="HospitalizationTreatmentRef" type="xs:string" minOccurs="0" />
+            <xs:element name="AllowedWithAnyHospitalization" type="xs:boolean" minOccurs="0" />
+            <xs:element name="IconIndex" type="xs:positiveInteger" minOccurs="0" />
         </xs:all>
     </xs:complexType>
 
     <xs:complexType name="GameDBProcedure">
         <xs:all>
-            <xs:element name="DressLevel" type="DressLevel" />
-            <xs:element name="DressLevelAfter" type="DressLevel" />
-            <xs:element name="RequiredIndistinctEmployeeCount" type="xs:int" />
-            <xs:element name="Biohazard" type="xs:boolean" />
+            <xs:element name="DressLevel" type="DressLevel" minOccurs="0" />
+            <xs:element name="DressLevelAfter" type="DressLevel" minOccurs="0" />
+            <xs:element name="StaffSelectionRules" type="StaffSelectionRules" minOccurs="0" />
+            <xs:element name="RequiredIndistinctEmployeeCount" type="xs:int" minOccurs="0" />
+            <xs:element name="Biohazard" type="xs:boolean" minOccurs="0" />
             <xs:element name="ProcedureScript" type="xs:string" minOccurs="1" />
+            <xs:element name="AnimationSetupSitting" type="AnimationSetup" minOccurs="0" />
+
+            <xs:element name="RequiredSkillsToPrescribe" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="SkillRef" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="RequiredDoctorQualificationList" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="SkillRef" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="RequiredRoomTags" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Tag" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
         </xs:all>
     </xs:complexType>
 
@@ -39,6 +73,13 @@
             <xs:element name="StartTimeHours" type="xs:int" />
             <xs:element name="ProbabilityPercent" type="xs:int" />
             <xs:element name="ProbabilityPercentMaxSkillLevel" />
+        </xs:all>
+    </xs:complexType>
+    <xs:complexType name="AnimationSetup">
+        <xs:all>
+            <xs:element name="AnimationNameIn" type="xs:string" />
+            <xs:element name="AnimationNameIdle" type="xs:string" />
+            <xs:element name="AnimationNameOut" type="xs:string" />
         </xs:all>
     </xs:complexType>
 </xs:schema>
