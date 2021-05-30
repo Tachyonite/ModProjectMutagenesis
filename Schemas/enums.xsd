@@ -61,4 +61,23 @@
             <xs:enumeration value="Positive" />
         </xs:restriction>
     </xs:simpleType>
+    <xs:simpleType name="TreatmentType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="NONE" />
+            <xs:enumeration value="RECEIPT" />
+            <xs:enumeration value="PRESCRIPTION" />
+            <xs:enumeration value="HOSPITALIZATION" />
+            <xs:enumeration value="SURGERY" />
+            <xs:enumeration value="PROCEDURE" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ReceiptType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="PILLS" />
+            <xs:enumeration value="IV_BAG" />
+            <xs:enumeration value="BLOOD_BAG" />
+            <xs:enumeration value="OXYGEN_MASK" />
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>

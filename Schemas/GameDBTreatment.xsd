@@ -7,7 +7,13 @@
         <xs:all>
             <xs:element name="AbbreviationLocID" type="xs:string" minOccurs="1" />
             <xs:element name="DiscomfortLevel" type="SymptomHazard" />
+            <xs:element name="TreatmentType" type="TreatmentType" />
+            <xs:element name="ReceiptType" type="ReceiptType" />
             <xs:element name="Procedure" type="GameDBProcedure" />
+            <xs:element name="DurationHours" type="xs:float" />
+            <xs:element name="HospitalizationTreatmentRef" type="xs:string" />
+            <xs:element name="AllowedWithAnyHospitalization" type="xs:boolean" />
+            <xs:element name="IconIndex" type="xs:positiveInteger" />
         </xs:all>
     </xs:complexType>
 
