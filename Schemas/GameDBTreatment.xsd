@@ -1,7 +1,13 @@
 <?xml version="1.0"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.w3schools.com" xmlns="https://www.w3schools.com" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation="enums.xsd" />
-    <xs:element name="GameDBTreatment"></xs:element>
+    <xs:element name="Database">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="GameDBTreatment" type="GameDBTreatment" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 
     <xs:complexType name="GameDBTreatment">
         <xs:all>
