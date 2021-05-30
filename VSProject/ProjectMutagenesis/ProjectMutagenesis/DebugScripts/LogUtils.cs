@@ -13,7 +13,7 @@ namespace ProjectMutagenesis.DebugScripts
 
         public static void LogMessage(string message)
         {
-            Debug.Log(MutagenesisInit.MUTAGENESIS_SYMBOL + ":" + message);
+            Debug.Log(MutagenesisMod.MUTAGENESIS_SYMBOL + ":" + message);
         }
 
 

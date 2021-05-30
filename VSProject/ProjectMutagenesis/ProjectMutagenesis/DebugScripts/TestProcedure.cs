@@ -13,6 +13,7 @@ namespace ProjectMutagenesis.DebugScripts
             base.Activate();
             LogUtils.LogMessage("Test procedure ");
             //can just add symptoms here? 
+            //m_stateData.m_procedureScene.MainCharacter this is the entity the procedure is being done on
         }
 
         public override bool IsIdle()

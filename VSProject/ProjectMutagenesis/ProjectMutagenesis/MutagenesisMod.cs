@@ -1,27 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿// MutagenesisMod.cs created by Iron Wolf for ProjectMutagenesis on 05/30/2021 5:55 PM
+// last updated 05/30/2021  5:55 PM
+
+using System;
 
 namespace ProjectMutagenesis
 {
-    /// <summary>
-    /// static class to initialize the mod
-    /// </summary>
-    public static class MutagenesisInit
+    public class MutagenesisMod : HospitalMod
     {
         /// <summary>
         /// short symbol for the mod
         /// </summary>
         public const string MUTAGENESIS_SYMBOL = "MUT";
+
         /// <summary>
         /// full title of the mod 
         /// </summary>
         public const string MUTAGENESIS_NAME = "Project Mutagenesis";
-        static MutagenesisInit()
-        {
-            //TODO init
-        }
 
+        private void Awake()
+        {
+            //TODO mod init 
+        }
     }
 }
