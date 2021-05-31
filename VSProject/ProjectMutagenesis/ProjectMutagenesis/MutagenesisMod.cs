@@ -2,6 +2,8 @@
 // last updated 05/30/2021  5:55 PM
 
 using System;
+using HarmonyLib;
+using UnityEngine;
 
 namespace ProjectMutagenesis
 {
@@ -17,9 +19,33 @@ namespace ProjectMutagenesis
         /// </summary>
         public const string MUTAGENESIS_NAME = "Project Mutagenesis";
 
+        public const string HARMONY_ID = "YaffIW.Mutagenesis";
+
         private void Awake()
         {
             //TODO mod init 
+
+            try
+            {
+                HarmonyPatch();
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"encountered {e.GetType().FullName} while patching! \n{e}");
+            }
+
         }
+
+
+        void HarmonyPatch()
+        {
+            var har = new Harmony(HARMONY_ID);
+
+
+            har.PatchAll();
+
+
+        }
+
     }
 }
